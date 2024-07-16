@@ -1,0 +1,61 @@
+// Formulário de registro
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Home - Register</title>
+        <meta name="description" content>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/form.css">
+    </head>
+    <body>
+        <div id="layout-content" class="selected no-navbar" role="main">
+            <form action="register.php" method="POST">
+                name: <input type="text" name="nome"
+                    placeholder="Digite seu nome"><br>
+                date of birth: <input type="date" name="data-nsc"
+                    min="1500-04-22" max="2025-04-12"><br>
+                blood type: <select name="tipo-sanguineo"><option
+                        value="ap">A+</option>
+                    <option value="an">A-</option>
+                    <option value="bp">B+</option>
+                    <option value="bn">B-</option>
+                    <option value="abp">AB+</option>
+                    <option value="abn">AB-</option>
+                    <option value="op">O+</option>
+                    <option value="on">O-</option>
+                </select><br>
+                age: <input type="number" name="idade" min="16" max="70"
+                    step="0.1"><br>
+                email: <input type="email" name="email"><br>
+                pass: <input type="password" name="senha"><br><br>
+                <textarea name="declaracao" rows="10"
+                    cols="30"></textarea><br></br>
+            fav color<br>
+            <input type="radio" value="blue" name="cor-fav">blue<br>
+            <input type="radio" value="purple" name="cor-fav">purple<br>
+            <input type="radio" value="black" name="cor-fav">black<br>
+            <input type="reset" value="limpar" />
+            <input type="submit" value="sent"
+                style="text-transform: uppercase;">
+
+            <label>Volume</label><br>
+            <input type="range" name="volume" min="0" max="10" value="3"><br>
+
+            <label>Pesquisar</label><br>
+            <input type="search" name="pesquisar"><br>
+
+            <label>Cores</label><br>
+            <input type="color" name="cores" value="#e66465" \><br>
+
+            <label>Hora E</label><br>
+            <input type="time" name="hora_entrada" \><br>
+
+            <label>Telefone</label><br>
+            <input type="tel" name="telefone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3} "><br>
+        </form>
+        <script src async defer></script>
+    </body>
+</html>
